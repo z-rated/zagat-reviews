@@ -1,4 +1,5 @@
 const mysql = require('mysql');
+
 const dataGenerator = require('./dataGenerator.js');
 
 const connection = mysql.createConnection({
