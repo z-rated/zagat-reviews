@@ -7,9 +7,11 @@ var getRandomItem = function(array) {
 var getRandomRecords = function() {
   var records = [];
   var restaurantObject = {};
+  var oneRestaurant = [];
+  var allRestaurants = [];
 
   for (var i = 0; i < 100; i++) {
-    var rest_id = hardData.randomID();
+    // var rest_id = hardData.randomID();
     var name = getRandomItem(hardData.names);
     var type = getRandomItem(hardData.types);
     var price = getRandomItem(hardData.prices);
@@ -19,7 +21,6 @@ var getRandomRecords = function() {
     var serviceScore = hardData.randomScore();
     
     restaurantObject = {
-      rest_id,
       name,
       type,
       price,
@@ -28,10 +29,19 @@ var getRandomRecords = function() {
       decorScore,
       serviceScore
     }
+    oneRestaurant.push(name, type, price, location, foodScore, decorScore, serviceScore);
+    allRestaurants.push(oneRestaurant);
+    oneRestaurant = [];
+
     records.push(restaurantObject);
   }
-  return records
+  debugger;
+  return allRestaurants;
 }
 
 var seedData = getRandomRecords();
-debugger;
+// console.log(seedData);
+
+module.exports = {
+  seedData
+}

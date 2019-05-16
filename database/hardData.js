@@ -30,4 +30,4 @@ module.exports= {
   locations,
   randomScore,
   randomID
-}
+};
