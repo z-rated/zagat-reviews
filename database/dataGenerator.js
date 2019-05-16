@@ -1,25 +1,24 @@
 const hardData = require('./hardData.js');
 
-var getRandomItem = function(array) {
+const getRandomItem = function (array) {
   return array[Math.floor(Math.random() * array.length)];
-}
+};
 
-var getRandomRecords = function() {
-  var records = [];
-  var restaurantObject = {};
-  var oneRestaurant = [];
-  var allRestaurants = [];
+const getRandomRecords = function () {
+  const records = [];
+  let restaurantObject = {};
+  let oneRestaurant = [];
+  const allRestaurants = [];
 
-  for (var i = 0; i < 100; i++) {
-    // var rest_id = hardData.randomID();
-    var name = getRandomItem(hardData.names);
-    var type = getRandomItem(hardData.types);
-    var price = getRandomItem(hardData.prices);
-    var location = getRandomItem(hardData.locations);
-    var foodScore = hardData.randomScore();
-    var decorScore = hardData.randomScore();
-    var serviceScore = hardData.randomScore();
-    
+  for (let i = 0; i < 100; i += 1) {
+    const name = getRandomItem(hardData.names);
+    const type = getRandomItem(hardData.types);
+    const price = getRandomItem(hardData.prices);
+    const location = getRandomItem(hardData.locations);
+    const foodScore = hardData.randomScore();
+    const decorScore = hardData.randomScore();
+    const serviceScore = hardData.randomScore();
+
     restaurantObject = {
       name,
       type,
@@ -27,21 +26,19 @@ var getRandomRecords = function() {
       location,
       foodScore,
       decorScore,
-      serviceScore
-    }
+      serviceScore,
+    };
     oneRestaurant.push(name, type, price, location, foodScore, decorScore, serviceScore);
     allRestaurants.push(oneRestaurant);
     oneRestaurant = [];
 
     records.push(restaurantObject);
   }
-  debugger;
   return allRestaurants;
-}
+};
 
-var seedData = getRandomRecords();
-// console.log(seedData);
+const seedData = getRandomRecords();
 
 module.exports = {
-  seedData
-}
+  seedData,
+};
