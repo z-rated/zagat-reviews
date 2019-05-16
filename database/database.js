@@ -1,8 +1,5 @@
-const express = require('express');
 const mysql = require('mysql');
-// const dataGenerator = require('./dataGenerator.js');
-
-const app = express();
+const dataGenerator = require('./dataGenerator.js');
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -11,20 +8,49 @@ const connection = mysql.createConnection({
   database: 'restaurants',
 });
 
-connection.connect();
+connection.connect((error1) => {
+  if (error1) {
+    throw error1;
+  }
 
-app.connect();
+  console.log('Connected!');
 
-// The Original code I used to insert records:
+  const deleteDatabase = 'DROP DATABASE restaurants';
+  const createDatabase = 'CREATE DATABASE restaurants';
+  const useDatabase = 'USE restaurants';
+  const createTable = 'CREATE TABLE restaurants(rest_id INT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, price INT NOT NULL, location VARCHAR(255) NOT NULL, foodScore VARCHAR(5) NOT NULL, decorScore VARCHAR(5) NOT NULL, serviceScore VARCHAR(5) NOT NULL, PRIMARY KEY (rest_id));';
+  const insertValues = 'INSERT INTO restaurants (name, type, price, location, foodScore, decorScore, serviceScore) VALUES ?';
+  const values = dataGenerator.seedData;
 
-// connection.connect(function(err) {
-//   if (err) throw err;
-//   console.log("Connected!");
-//   var sql = `INSERT INTO restaurants (name, type, price,
-// location, foodScore, decorScore, serviceScore) VALUES ?`;
-//   var values = dataGenerator.seedData;
-//   connection.query(sql, [values], function (err, result) {
-//     if (err) throw err;
-//     console.log("Number of records inserted: " + result.affectedRows);
-//   });
-// });
+  connection.query(deleteDatabase, [values], (error2) => {
+    if (error2) {
+      throw error2;
+    }
+  });
+
+
+  connection.query(createDatabase, [values], (error3) => {
+    if (error3) {
+      throw error3;
+    }
+  });
+
+  connection.query(useDatabase, [values], (error4) => {
+    if (error4) {
+      throw error4;
+    }
+  });
+
+  connection.query(createTable, [values], (error5) => {
+    if (error5) {
+      throw error5;
+    }
+  });
+
+  connection.query(insertValues, [values], (error6, result) => {
+    if (error6) {
+      throw error6;
+    }
+    return result.affectedRows;
+  });
+});
