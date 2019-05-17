@@ -13,7 +13,7 @@ connection.connect((error1) => {
     throw error1;
   }
 
-  console.log('Connected!');
+  console.log('Connected to database!');
 
   const deleteDatabase = 'DROP DATABASE restaurants';
   const createDatabase = 'CREATE DATABASE restaurants';
@@ -27,30 +27,26 @@ connection.connect((error1) => {
       throw error2;
     }
   });
-
-
   connection.query(createDatabase, [values], (error3) => {
     if (error3) {
       throw error3;
     }
   });
-
   connection.query(useDatabase, [values], (error4) => {
     if (error4) {
       throw error4;
     }
   });
-
   connection.query(createTable, [values], (error5) => {
     if (error5) {
       throw error5;
     }
   });
-
   connection.query(insertValues, [values], (error6, result) => {
     if (error6) {
       throw error6;
     }
+    console.log(result.affectedRows);
     return result.affectedRows;
   });
 });
