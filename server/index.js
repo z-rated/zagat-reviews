@@ -9,7 +9,8 @@ app.use(bodyParser.json());
 
 app.use(express.static(`${__dirname}/../client/dist`));
 
-app.get('/reviews', (req, res) => {
+app.get('/api/restaurants/:id/reviews', (req, res) => {
+  // access id at req.params.id!!!
   database.getRecords((error, result) => {
     if (error) {
       console.log('Error in server!');
