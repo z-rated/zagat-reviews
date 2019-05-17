@@ -14,7 +14,6 @@ const getRecords = function (callback) {
       callback(error7, null);
     } else {
       callback(null, result);
-      console.log('Records retrieved!');
     }
   });
 };

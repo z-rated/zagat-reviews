@@ -4,9 +4,13 @@ const getRandomItem = function (array) {
   return array[Math.floor(Math.random() * array.length)];
 };
 
+const randomScore = function () {
+  return (((Math.round(Math.random() * 50)) / 10)).toFixed(1);
+};
+
 const getRandomRecords = function () {
   const records = [];
-  let restaurantObject = {};
+  const restaurantObject = {};
   let oneRestaurant = [];
   const allRestaurants = [];
 
@@ -15,21 +19,16 @@ const getRandomRecords = function () {
     const type = getRandomItem(hardData.types);
     const price = getRandomItem(hardData.prices);
     const location = getRandomItem(hardData.locations);
-    const foodScore = hardData.randomScore();
-    const decorScore = hardData.randomScore();
-    const serviceScore = hardData.randomScore();
+    const description = getRandomItem(hardData.descriptions);
+    const foodScore = randomScore();
+    const decorScore = randomScore();
+    const serviceScore = randomScore();
 
-    restaurantObject = {
-      name,
-      type,
-      price,
-      location,
-      foodScore,
-      decorScore,
-      serviceScore,
-    };
-    oneRestaurant.push(name, type, price, location, foodScore, decorScore, serviceScore);
+    oneRestaurant.push(name, type, price,
+      location, description, foodScore,
+      decorScore, serviceScore);
     allRestaurants.push(oneRestaurant);
+
     oneRestaurant = [];
 
     records.push(restaurantObject);
