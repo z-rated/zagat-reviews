@@ -1,9 +1,4 @@
-const names = ['SOMA', 'SF\'s Best', 'Pizza Palace', 'Mt. Fuji', 'Bravo Pizza',
-  'Not Your Average Joe\'s', 'D&M\'S B&B', 'Marnya Supreme', 'Yang Ming', 'Sang Kee',
-  'Hullabaloo', 'Today\'s Croissants', 'Moolah Moolah', 'Beach Noise', 'Sweet Daisy\'s',
-  'Eat At Joe\'s', 'Nothing With Avocado', 'Time To Eat', 'Palermo\'s', 'Jose and Joe\'s',
-  'Brady Brunch', 'Every Sunday', 'Table 49', 'The Pharmacy', 'Wings & Burgers',
-  'La Capra', 'A Slice Is Nice', 'Sugar & Spice', 'Gerhard\'s', 'Fish In The Sea'];
+const names = ['Cockscomb Restaurant', 'SPIN San Francisco', 'Tropisueno', 'The Cooperage', 'Paul Martin\'s', 'The Hop Yard', 'The Lazy Dog', 'Salt House', '3rd Cousin', 'Parcel 104', 'Cafe Beaujolais', 'The Palisades', 'The Perennial', 'Chez Shea', 'Causwells', 'Outerlands', 'Central Kitchen', 'Stone and Embers', 'In Situ', 'Cafe La Haye', 'Goose and Gander', 'Jack\'s Restaurant', 'Wayfare Taven', 'Mama\'s', 'Chow Food Bar', 'Ella\'s', 'Gary Danko\'s', 'Benu', 'Lazy Bear', 'Octavia', 'Stones Throw', 'Sons & Daughters', 'Saison', 'Spruce'];
 
 
 const types = ['Italian', 'American', 'Chinese', 'Japanese', 'Singaporean',

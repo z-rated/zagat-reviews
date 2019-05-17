@@ -19,6 +19,20 @@
 
 > Some usage instructions
 
+1.) In order to seed the database, run:
+
+[ npm run seed ]
+
+2.) To start the server, run:
+
+[ npm run start ]
+
+3.) To make webpack begin watching the files, run:
+
+[ npm run react-dev ]
+
+4.) 
+
 ## Requirements
 
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).

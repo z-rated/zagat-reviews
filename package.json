@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "jest",
     "start": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
     "seed": "node database/database.js"
@@ -33,7 +34,8 @@
     "precommit": "^1.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.0.1",
+    "react-test-renderer": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -45,9 +47,12 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "faker": "^4.1.0",
     "husky": "^2.3.0",
+    "jest": "^24.8.0",
     "lint-staged": "^8.1.7",
     "pre-commit": "^1.2.2",
+    "puppeteer": "^1.16.0",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.3.1"

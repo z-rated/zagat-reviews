@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jQuery';
 import Header from './components/header.jsx'
 
-class App extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,4 +38,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<Index />, document.getElementById('app'));
+
+export default Index;
