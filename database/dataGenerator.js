@@ -16,7 +16,7 @@ const getRandomRecords = function () {
   const allRestaurants = [];
 
   for (let i = 0; i < 100; i += 1) {
-    const name = getRandomItem(hardData.names);
+    const name = getRandomItem(hardData.names).toUpperCase();
     const type = getRandomItem(hardData.types);
     const price = getRandomItem(hardData.prices);
     const location = getRandomItem(hardData.locations);
