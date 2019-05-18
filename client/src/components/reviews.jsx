@@ -11,8 +11,10 @@ class Reviews extends React.Component {
 
   render() {
     return (
-      <div className="header">
-        <p>{this.props.currentRestaurant.review}</p>
+      <div className="header reviews blueFont">
+        <div>
+          <p>{this.props.currentRestaurant.review}</p>
+        </div>
       </div>
     )
   }

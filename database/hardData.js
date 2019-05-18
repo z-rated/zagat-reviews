@@ -4,7 +4,7 @@ const names = ['Cockscomb Restaurant', 'SPIN San Francisco', 'Tropisueno', 'The 
 const types = ['Italian', 'American', 'Chinese', 'Japanese', 'Singaporean',
   'Asian Fusion', 'French', 'British', 'Irish', 'Vietnamese', 'New Californian', 'Seafood'];
 
-const prices = [1, 2, 3, 4];
+const prices = ['$', '$$', '$$$', '$$$$'];
 
 const locations = ['SoMa', 'Mission Bay', 'Tenderloin', 'China Basin', 'Downtown', 'Parkside', 'The Mission'];
 

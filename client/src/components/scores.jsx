@@ -13,39 +13,37 @@ class Scores extends React.Component {
   render() {
     return (
       <div className="header">
+        <h5 className="scoresTitle">THE ZAGAT REVIEW</h5>
+        <div className="flex blueFont scoreBorder">
 
-        <h5 className="reviewsTitle">THE ZAGAT REVIEW</h5>
-
-        <div className="flex">
-          <div>
-            <div className="score">
+          <div className="rating">
+            <div className="score food">
               {this.props.currentRestaurant.foodScore}
             </div>
-            <span>
+            <span className="category">
               FOOD
             </span>
           </div>
 
-          <div>
-            <div className="score">
+          <div className="rating">
+            <div className="score service">
               {this.props.currentRestaurant.serviceScore}
             </div>
-            <span>
+            <span className="category">
               SERVICE
             </span>
           </div>
 
-          <div>
-            <div className="score">
+          <div className="rating">
+            <div className="score decor">
               {this.props.currentRestaurant.decorScore}
             </div>
-            <span>
+            <span className="category">
               DECOR
             </span>
           </div>
 
         </div>
-
       </div>
     );
   }

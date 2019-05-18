@@ -14,11 +14,19 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h2 className="name">{this.props.currentRestaurant.name}</h2>
+        <h2 className="blueFont">{this.props.currentRestaurant.name}</h2>
         <h4>{this.props.currentRestaurant.description}</h4>
-        <a href="#" className="headerLink">{this.props.currentRestaurant.type}</a>
-        <a href="#" className="headerLink">{this.props.currentRestaurant.location}</a>
-        <a href="#" className="headerLink">{this.props.currentRestaurant.price}</a>
+        <div>
+          <span>
+            <a href="#" className="headerLink">{this.props.currentRestaurant.type}</a>
+            <span>·</span>
+          </span>
+          <span>
+            <a href="#" className="headerLink">{this.props.currentRestaurant.location}</a>
+            <span>·</span>
+          </span>
+          <a href="#" className="headerLink">{this.props.currentRestaurant.price}</a>
+        </div>
       </div>
     )
   }
