@@ -10,6 +10,7 @@ class Reviews extends React.Component {
   }
 
   render() {
+    console.log(this.props.currentRestaurant.review);
     return (
       <div className="header reviews blueFont">
         <div>
