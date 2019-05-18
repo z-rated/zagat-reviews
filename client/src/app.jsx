@@ -1,6 +1,8 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import $ from 'jQuery';
 import Header from './components/header.jsx';
+import Graph from './components/graph.jsx';
 import Scores from './components/scores.jsx';
 import Reviews from './components/reviews.jsx';
 
@@ -10,8 +12,8 @@ class App extends React.Component {
     this.state = {
       currentRestaurant: {
 
-      }
-    }
+      },
+    };
   }
 
   componentDidMount() {
@@ -19,11 +21,12 @@ class App extends React.Component {
       method: 'GET',
       url: 'http://localhost:3001/api/restaurants/1/reviews',
       success: (result) => {
-        const newRestaurant = result[0];
+        const randomIndex = Math.round(Math.random() * 100);
+        const newRestaurant = result[randomIndex];
         this.setState({
           currentRestaurant: newRestaurant,
         });
-      }, 
+      },
       error: (error) => {
         console.log(error);
       },
@@ -31,14 +34,15 @@ class App extends React.Component {
   }
 
   render() {
-    return(
-      <div class="container">
-        <Header currentRestaurant={this.state.currentRestaurant}/>
-        <Scores currentRestaurant={this.state.currentRestaurant}/>
-        <Reviews currentRestaurant={this.state.currentRestaurant}/>
+    return (
+      <div className="container">
+        <Header currentRestaurant={this.state.currentRestaurant} />
+        <Graph currentRestaurant={this.state.currentRestaurant} />
+        <Scores currentRestaurant={this.state.currentRestaurant} />
+        <Reviews currentRestaurant={this.state.currentRestaurant} />
       </div>
-    )
+    );
   }
-};
+}
 
 export default App;
