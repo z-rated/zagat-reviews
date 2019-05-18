@@ -1,5 +1,4 @@
-const test = require('jest');
-const dataGenerator = require('./dataGenerator.js');
+const dataGenerator = require('../database/dataGenerator.js');
 
 test('dataGenerator\'s array of seededData should have 100 records', () => {
   expect(dataGenerator.seedData.length).toBe(100);

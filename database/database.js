@@ -17,8 +17,8 @@ connection.connect((error1) => {
   const deleteDatabase = 'DROP DATABASE IF EXISTS restaurants';
   const createDatabase = 'CREATE DATABASE restaurants';
   const useDatabase = 'USE restaurants';
-  const createTable = 'CREATE TABLE restaurants (rest_id INT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, price INT NOT NULL, location VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, foodScore VARCHAR(5) NOT NULL, decorScore VARCHAR(5) NOT NULL, serviceScore VARCHAR(5) NOT NULL, PRIMARY KEY (rest_id));';
-  const insertValues = 'INSERT INTO restaurants (name, type, price, location, description, foodScore, decorScore, serviceScore) VALUES ?';
+  const createTable = 'CREATE TABLE restaurants (rest_id INT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, price INT NOT NULL, location VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, foodScore VARCHAR(5) NOT NULL, decorScore VARCHAR(5) NOT NULL, serviceScore VARCHAR(5) NOT NULL, review VARCHAR(380) NOT NULL, PRIMARY KEY (rest_id));';
+  const insertValues = 'INSERT INTO restaurants (name, type, price, location, description, foodScore, decorScore, serviceScore, review) VALUES ?';
   const values = dataGenerator.seedData;
 
   connection.query(deleteDatabase, [values], (error2) => {

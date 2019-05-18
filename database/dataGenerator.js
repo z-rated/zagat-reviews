@@ -1,3 +1,4 @@
+const faker = require('faker');
 const hardData = require('./hardData.js');
 
 const getRandomItem = function (array) {
@@ -23,10 +24,11 @@ const getRandomRecords = function () {
     const foodScore = randomScore();
     const decorScore = randomScore();
     const serviceScore = randomScore();
+    const review = faker.lorem.paragraph();
 
     oneRestaurant.push(name, type, price,
       location, description, foodScore,
-      decorScore, serviceScore);
+      decorScore, serviceScore, review);
     allRestaurants.push(oneRestaurant);
 
     oneRestaurant = [];
