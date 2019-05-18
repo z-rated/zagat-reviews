@@ -1,6 +1,8 @@
 import React from 'react';
 import $ from 'jQuery';
-import Header from './components/header.jsx'
+import Header from './components/header.jsx';
+import Scores from './components/scores.jsx';
+import Reviews from './components/reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -32,6 +34,8 @@ class App extends React.Component {
     return(
       <div class="container">
         <Header currentRestaurant={this.state.currentRestaurant}/>
+        <Scores currentRestaurant={this.state.currentRestaurant}/>
+        <Reviews currentRestaurant={this.state.currentRestaurant}/>
       </div>
     )
   }

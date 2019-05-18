@@ -19,7 +19,6 @@ class Header extends React.Component {
         <a href="#" className="headerLink">{this.props.currentRestaurant.type}</a>
         <a href="#" className="headerLink">{this.props.currentRestaurant.location}</a>
         <a href="#" className="headerLink">{this.props.currentRestaurant.price}</a>
-        <p>{this.props.currentRestaurant.review}</p>
       </div>
     )
   }
