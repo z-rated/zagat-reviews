@@ -1,23 +1,25 @@
+/* eslint-disable no-var */
+/* eslint-disable react/no-unused-state */
+/* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import $ from 'jQuery';
 
 class Reviews extends React.Component {
   constructor(props) {
-    super(props) 
+    super(props);
     this.state = {
-      
-    }
+    };
   }
 
   render() {
-    console.log(this.props.currentRestaurant.review);
     return (
       <div className="header reviews blueFont">
         <div>
-          <p>{this.props.currentRestaurant.review}</p>
+          {/* <p className="review">{this.props.currentRestaurant.review}</p> */}
         </div>
       </div>
-    )
+    );
   }
 }
 

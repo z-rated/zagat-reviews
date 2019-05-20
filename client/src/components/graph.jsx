@@ -11,7 +11,7 @@ class Graph extends React.Component {
   render () {
     return (
       <div>
-        <div class="line"></div>
+        <div className="line"></div>
       </div>
     )
   }
