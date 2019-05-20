@@ -8,7 +8,7 @@ const prices = ['$', '$$', '$$$', '$$$$'];
 
 const locations = ['SoMa', 'Mission Bay', 'Tenderloin', 'China Basin', 'Downtown', 'Parkside', 'The Mission'];
 
-const descriptions = ['High-profile, upscale New American fare', 'Quirky cafe with American eats & coffee', 'Quick stop for Middle Eastern grub', 'Chic bar & kitchen for Californian eats', 'Live-fire dishes & drinks in chic digs', 'Museum\'s bistro for star chef\'s recipes', 'Brunch under a historical glass dome', 'Posh cocktail den with city views', 'Elevated modern American cuisine & wines', 'Farm-to-table New American haute cuisine', 'Modern, bi-level American brasserie', 'Classic, buzzy gastropub with craft beer'];
+const descriptions = ['High-profile, fine-dining fare', 'Quirky cafe with cozy snacks & coffee', 'Quick stop for exotic, tasty grub', 'Chic bar & kitchen for the most modern offerings', 'Live-fire dishes & drinks in chic digs', 'Museum\'s bistro for star chef\'s recipes', 'Brunch under a historical glass dome', 'Posh cocktail den with city views', 'Elevated world cuisine & wines', 'Farm-to-table haute cuisine', 'Revolutionary, bi-level kitchen & dining', 'Classic, buzzy gastropub with craft beer'];
 
 module.exports = {
   names,

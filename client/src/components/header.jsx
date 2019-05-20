@@ -15,7 +15,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <h2 className="blueFont">{this.props.currentRestaurant.name}</h2>
-        <h4>{this.props.currentRestaurant.description}</h4>
+        <h4 className="description">{this.props.currentRestaurant.description}</h4>
         <div>
           <span>
             <a href="#" className="headerLink">{this.props.currentRestaurant.type}</a>

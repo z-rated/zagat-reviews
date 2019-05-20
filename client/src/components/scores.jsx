@@ -12,11 +12,11 @@ class Scores extends React.Component {
 
   render() {
     return (
-      <div className="header">
+      <div className="header scores">
         <h5 className="scoresTitle">THE ZAGAT REVIEW</h5>
         <div className="flex blueFont scoreBorder">
 
-          <div className="rating">
+          <div className="rating sideBorder">
             <div className="score food">
               {this.props.currentRestaurant.foodScore}
             </div>
@@ -25,7 +25,7 @@ class Scores extends React.Component {
             </span>
           </div>
 
-          <div className="rating">
+          <div className="rating sideBorder">
             <div className="score service">
               {this.props.currentRestaurant.serviceScore}
             </div>
