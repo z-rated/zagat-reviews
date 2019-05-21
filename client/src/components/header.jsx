@@ -14,7 +14,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h2 className="blueFont header">{this.props.currentRestaurant.name}</h2>
+        <h2 className="blueFont header name">{this.props.currentRestaurant.name}</h2>
         <h4 className="description">{this.props.currentRestaurant.description}</h4>
         <div>
           <span>
