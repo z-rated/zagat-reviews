@@ -26,7 +26,6 @@ import $ from 'jQuery';
 import Header from './components/header.jsx';
 import Graph from './components/graph.jsx';
 import Scores from './components/scores.jsx';
-import Reviews from './components/reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,7 +37,6 @@ class App extends React.Component {
     };
   }
 
-
   componentDidMount() {
     $.ajax({
       method: 'GET',
@@ -46,8 +44,7 @@ class App extends React.Component {
       success: (result) => {
         const randomIndex = Math.round(Math.random() * 100);
         const newRestaurant = result[randomIndex];
-        console.log(newRestaurant.review);
-        const quotedReview = this.addQuotes(newRestaurant.review);
+        const quotedReview = this.addBoldedQuotes(newRestaurant.review);
         newRestaurant.review = quotedReview;
         this.setState({
           currentRestaurant: newRestaurant,
@@ -59,8 +56,7 @@ class App extends React.Component {
     });
   }
 
-  addQuotes (review) {
-
+  addBoldedQuotes (review) {
     var splitReview = review.split(' ');
     var phrase = [];
     var rejoinedPhrase = [];
@@ -91,7 +87,9 @@ class App extends React.Component {
           phrase.unshift(' "');
           phrase[phrase.length - 1] += '" ';
           justQuoted = true;
-        } 
+        } else {
+          phrase[phrase.length - 1] += ' ';
+        }
       } else {
         justQuoted = false;
         phrase[phrase.length - 1] += ' ';
@@ -100,9 +98,9 @@ class App extends React.Component {
       rejoinedPhrase = phrase.join('');
       
       if (justQuoted === true) {
-        $('#text').append(`<span class=""><strong>${rejoinedPhrase}</strong></span>`);
+        $('#text').append(`<span class='bolded'><strong class='bolded'>${rejoinedPhrase}</strong></span>`);
       } else {
-        $('#text').append(`<span class="">${rejoinedPhrase}</span>`);
+        $('#text').append(`<span>${rejoinedPhrase}</span>`);
       }
 
       rejoinedReview.push(rejoinedPhrase);
@@ -123,7 +121,6 @@ class App extends React.Component {
         <Header currentRestaurant={this.state.currentRestaurant} />
         <Graph currentRestaurant={this.state.currentRestaurant} />
         <Scores currentRestaurant={this.state.currentRestaurant} />
-        <Reviews currentRestaurant={this.state.currentRestaurant} />
       </div>
     );
   }

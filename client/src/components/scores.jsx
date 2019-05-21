@@ -27,19 +27,19 @@ class Scores extends React.Component {
 
           <div className="rating sideBorder">
             <div className="score service">
-              {this.props.currentRestaurant.serviceScore}
-            </div>
-            <span className="category">
-              SERVICE
-            </span>
-          </div>
-
-          <div className="rating">
-            <div className="score decor">
               {this.props.currentRestaurant.decorScore}
             </div>
             <span className="category">
               DECOR
+            </span>
+          </div>
+
+          <div className="rating">
+            <div className="score service">
+              {this.props.currentRestaurant.serviceScore}
+            </div>
+            <span className="category">
+              SERVICE
             </span>
           </div>
 

@@ -3,7 +3,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import $ from 'jQuery';
 
 class Reviews extends React.Component {
   constructor(props) {

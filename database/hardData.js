@@ -1,4 +1,4 @@
-const names = ['Cockscomb Restaurant', 'SPIN San Francisco', 'Tropisueno', 'The Cooperage', 'Paul Martin\'s', 'The Hop Yard', 'The Lazy Dog', 'Salt House', '3rd Cousin', 'Parcel 104', 'Cafe Beaujolais', 'The Palisades', 'The Perennial', 'Chez Shea', 'Causwells', 'Outerlands', 'Central Kitchen', 'Stone and Embers', 'In Situ', 'Cafe La Haye', 'Goose and Gander', 'Jack\'s Restaurant', 'Wayfare Taven', 'Mama\'s', 'Chow Food Bar', 'Ella\'s', 'Gary Danko\'s', 'Benu', 'Lazy Bear', 'Octavia', 'Stones Throw', 'Sons & Daughters', 'Saison', 'Spruce'];
+const names = ['Cockscomb Restaurant', 'SPIN San Francisco', 'Tropisueno', 'The Cooperage', 'Paul Martin\'s', 'The Hop Yard', 'The Lazy Dog', 'Salt House', '3rd Cousin', 'Parcel 104', 'Cafe Beaujolais', 'The Palisades', 'The Perennial', 'Chez Shea', 'Causwells', 'Outerlands', 'Central Kitchen', 'Stone and Embers', 'In Situ', 'Cafe La Haye', 'Goose and Gander', 'Jack\'s Restaurant', 'Wayfare Tavern', 'Mama\'s', 'Chow Food Bar', 'Ella\'s', 'Gary Danko\'s', 'Benu', 'Lazy Bear', 'Octavia', 'Stones Throw', 'Sons & Daughters', 'Saison', 'Spruce'];
 
 
 const types = ['Italian', 'American', 'Chinese', 'Japanese', 'Singaporean',
