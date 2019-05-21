@@ -32,7 +32,15 @@ class App extends React.Component {
     super(props);
     this.state = {
       currentRestaurant: {
-
+        name: '',
+        description: '',
+        type: '',
+        location: '',
+        price: '',
+        review: '',
+        foodScore: '',
+        decorScore: '',
+        serviceScore: '',
       },
     };
   }
@@ -45,6 +53,7 @@ class App extends React.Component {
         const randomIndex = Math.round(Math.random() * 100);
         const newRestaurant = result[randomIndex];
         const quotedReview = this.addBoldedQuotes(newRestaurant.review);
+        console.log(result);
         newRestaurant.review = quotedReview;
         this.setState({
           currentRestaurant: newRestaurant,
@@ -117,10 +126,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <Header currentRestaurant={this.state.currentRestaurant} />
-        <Graph currentRestaurant={this.state.currentRestaurant} />
-        <Scores currentRestaurant={this.state.currentRestaurant} />
+      <div className="container vw" id="myapp">
+        <Header currentRestaurant={this.state.currentRestaurant} className="headerz" />
+        <Graph currentRestaurant={this.state.currentRestaurant} className="graphz" />
+        <Scores currentRestaurant={this.state.currentRestaurant} className="scorez" />
       </div>
     );
   }
