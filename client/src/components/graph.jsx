@@ -1,31 +1,22 @@
-/* eslint-disable prefer-template */
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-undef */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable react/no-unused-state */
 import React from 'react';
 
 class Graph extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedFile: null,
-      selectedFiles: null,
     };
   }
 
   componentDidMount() {
     const logo = document.getElementById('logo');
     const randomization = Math.round(Math.random() * 300) + 170;
-    logo.style.setProperty('--left-offset', randomization + 'px');
+    logo.style.setProperty('--left-offset', `${randomization}px`);
   }
 
   render() {
     return (
       <div className="smallPad">
-        <div className="line" id="graph"></div>
+        <div className="line" id="graph" />
         <svg version="1.1" id="logo" xmlnsSketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-434 235 91 91" xmlSpace="preserve" width="40px" height="40px">
           <g>
             <polygon fill="#FFFFFF" points="-384.1,265.2 -409.1,265.2 -409.1,268.6 -390.4,268.6 -412,304.6 -412,305.4 -365.6,305.4 -365.6,301.9 -406.2,301.9" />

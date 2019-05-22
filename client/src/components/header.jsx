@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 
 class Header extends React.Component {
@@ -8,7 +8,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
 
-    }
+    };
   }
 
   render() {
@@ -28,7 +28,7 @@ class Header extends React.Component {
           <a href="#" className="headerLink">{this.props.currentRestaurant.price}</a>
         </div>
       </div>
-    )
+    );
   }
 }
 
