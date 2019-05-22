@@ -10,7 +10,7 @@ class Graph extends React.Component {
   componentDidMount() {
     const logo = document.getElementById('logo');
     const randomization = Math.round(Math.random() * 300) + 170;
-    logo.style.setProperty('--left-offset', `${randomization  }px`);
+    logo.style.setProperty('--left-offset', `${randomization}px`);
   }
 
   render() {
