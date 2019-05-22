@@ -1,13 +1,7 @@
-/* eslint-disable padded-blocks */
-/* eslint-disable prefer-const */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Enzyme, { shallow, render, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import App from '../client/src/app';
-import Graph from '../client/src/components/graph';
-import Header from '../client/src/components/header';
-import Scores from '../client/src/components/scores';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -18,22 +12,21 @@ global.mount = mount;
 
 
 describe('An Enzyme suite to test React\'s functionality', () => {
-
   it('should have a \'Header\' submodule', () => {
     const wrapper = shallow(<App />);
-    let test = wrapper.find('.headerz');
+    const test = wrapper.find('.headerz');
     expect(test).toHaveLength(1);
   });
 
   it('should have a \'Graph\' submodule', () => {
     const wrapper = shallow(<App />);
-    let test = wrapper.find('.graphz');
+    const test = wrapper.find('.graphz');
     expect(test).toHaveLength(1);
   });
 
   it('should have a \'Scores\' submodule', () => {
     const wrapper = shallow(<App />);
-    let test = wrapper.find('.scorez');
+    const test = wrapper.find('.scorez');
     expect(test).toHaveLength(1);
   });
 });
