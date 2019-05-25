@@ -8,6 +8,7 @@ import Header from './components/header.jsx';
 import Graph from './components/graph.jsx';
 import Scores from './components/scores.jsx';
 import Reviews from './components/reviews.jsx';
+import Styles from '../dist/styles/appstyles.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -107,7 +108,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container" id="myapp">
+      <div className={Styles.container} id="myapp">
         <Header currentRestaurant={this.state.currentRestaurant} className="headerz" />
         <Graph currentRestaurant={this.state.currentRestaurant} className="graphz" />
         <Scores currentRestaurant={this.state.currentRestaurant} className="scorez" />
