@@ -1,9 +1,12 @@
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable max-len */
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 import styles from '../../dist/styles/headerstyles.css';
+import PropTypes from 'prop-types';
 
 class Header extends React.Component {
   constructor(props) {
@@ -33,5 +36,9 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.propTypes = {
+  currentRestaurant: PropTypes.object.isRequired,
+};
 
 export default Header;

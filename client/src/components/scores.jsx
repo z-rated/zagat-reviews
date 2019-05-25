@@ -1,7 +1,10 @@
+/* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 import styles from '../../dist/styles/scoresstyles.css';
+import PropTypes from 'prop-types';
 
 class Scores extends React.Component {
   constructor(props) {
@@ -49,5 +52,9 @@ class Scores extends React.Component {
     );
   }
 }
+
+Scores.propTypes = {
+  currentRestaurant: PropTypes.object.isRequired,
+};
 
 export default Scores;
