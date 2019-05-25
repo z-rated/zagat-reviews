@@ -53,6 +53,12 @@ Repo link for the Zagat reviews module in the middle of Zagat's page:
 An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 - Node 6.13.0
+— Express
+— Webpack
+— React
+— jQuery
+— Jest
+— Enzyme
 
 ## Development
 

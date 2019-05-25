@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import styles from '../../dist/styles/scoresstyles.css';
 
 class Scores extends React.Component {
   constructor(props) {
@@ -12,33 +13,33 @@ class Scores extends React.Component {
 
   render() {
     return (
-      <div className="header scores scoreBoard">
-        <h5 className="scoresTitle">THE ZAGAT REVIEW</h5>
-        <div className="flex blueFont scoreBorder scoreBoard">
+      <div className={styles.scores}>
+        <h5 className={styles.scoresTitle}>THE ZAGAT REVIEW</h5>
+        <div className={styles.scoreBoard}>
 
-          <div className="rating sideBorder">
-            <div className="score food">
+          <div className={styles.side}>
+            <div className={styles.food}>
               {this.props.currentRestaurant.foodScore}
             </div>
-            <span className="category">
+            <span className={styles.category}>
               FOOD
             </span>
           </div>
 
-          <div className="rating sideBorder">
-            <div className="score service">
+          <div className={styles.side}>
+            <div className={styles.decor}>
               {this.props.currentRestaurant.decorScore}
             </div>
-            <span className="category">
+            <span className={styles.category}>
               DECOR
             </span>
           </div>
 
-          <div className="rating">
-            <div className="score service">
+          <div className={styles.noside}>
+            <div className={styles.service}>
               {this.props.currentRestaurant.serviceScore}
             </div>
-            <span className="category">
+            <span className={styles.category}>
               SERVICE
             </span>
           </div>

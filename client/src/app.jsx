@@ -1,11 +1,13 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/extensions */
 /* eslint-disable class-methods-use-this */
+
 import React from 'react';
 import $ from 'jquery';
 import Header from './components/header.jsx';
 import Graph from './components/graph.jsx';
 import Scores from './components/scores.jsx';
+import Reviews from './components/reviews.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -33,7 +35,6 @@ class App extends React.Component {
         const randomIndex = Math.round(Math.random() * 100);
         const newRestaurant = result[randomIndex];
         const quotedReview = this.addBoldedQuotes(newRestaurant.review);
-        console.log(result);
         newRestaurant.review = quotedReview;
         this.setState({
           currentRestaurant: newRestaurant,
@@ -86,9 +87,10 @@ class App extends React.Component {
       rejoinedPhrase = phrase.join('');
 
       if (justQuoted === true) {
-        $('#text').append(`<span class='bolded'><strong class='bolded'>${rejoinedPhrase}</strong></span>`);
+        $('#body').append(`<span class='bolded'><strong class='bolded'>${rejoinedPhrase}</strong></span>`);
+        // ^^^ NOTE: used to append to (#text);
       } else {
-        $('#text').append(`<span>${rejoinedPhrase}</span>`);
+        $('#body').append(`<span>${rejoinedPhrase}</span>`);
       }
 
       rejoinedReview.push(rejoinedPhrase);
@@ -105,10 +107,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container vw" id="myapp">
+      <div className="container" id="myapp">
         <Header currentRestaurant={this.state.currentRestaurant} className="headerz" />
         <Graph currentRestaurant={this.state.currentRestaurant} className="graphz" />
         <Scores currentRestaurant={this.state.currentRestaurant} className="scorez" />
+        <Reviews className="container" />
       </div>
     );
   }
