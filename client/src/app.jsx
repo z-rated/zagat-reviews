@@ -1,3 +1,7 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-debugger */
+/* eslint-disable react/no-unused-state */
+/* eslint-disable comma-dangle */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable import/extensions */
 /* eslint-disable class-methods-use-this */
@@ -7,8 +11,8 @@ import $ from 'jquery';
 import Header from './components/header.jsx';
 import Graph from './components/graph.jsx';
 import Scores from './components/scores.jsx';
-import Reviews from './components/reviews.jsx';
-import Styles from '../dist/styles/appstyles.css'
+import Reviewphrase from './components/reviewphrase.jsx';
+import styles from '../dist/styles/appstyles.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,6 +29,12 @@ class App extends React.Component {
         decorScore: '',
         serviceScore: '',
       },
+      phrases: [
+        {
+          text: '',
+          bold: false,
+        },
+      ]
     };
   }
 
@@ -51,10 +61,13 @@ class App extends React.Component {
     const splitReview = review.split(' ');
     let phrase = [];
     let rejoinedPhrase = [];
+    const reviewObjects = [];
+    let phraseObject = {
+      text: '',
+      bold: false,
+    };
     let randomLength = Math.round(Math.random() * 3) + 2;
-    const rejoinedReview = [];
     let wordCount = 0;
-    let stringReview = '';
     let i = 0;
     let k = 0;
     let justQuoted = false;
@@ -76,43 +89,48 @@ class App extends React.Component {
         if (Math.random() > 0.5) {
           phrase.unshift(' "');
           phrase[phrase.length - 1] += '" ';
+          phraseObject.bold = true;
           justQuoted = true;
         } else {
           phrase[phrase.length - 1] += ' ';
+          phraseObject.bold = false;
         }
       } else {
         justQuoted = false;
+        phraseObject.bold = false;
         phrase[phrase.length - 1] += ' ';
       }
 
       rejoinedPhrase = phrase.join('');
-
-      if (justQuoted === true) {
-        $('#body').append(`<span class='bolded'><strong class='bolded'>${rejoinedPhrase}</strong></span>`);
-        // ^^^ NOTE: used to append to (#text);
-      } else {
-        $('#body').append(`<span>${rejoinedPhrase}</span>`);
-      }
-
-      rejoinedReview.push(rejoinedPhrase);
+      phraseObject.text = rejoinedPhrase;
+      reviewObjects.push(phraseObject);
 
       phrase = [];
+      phraseObject = {};
       rejoinedPhrase = [];
       randomLength = Math.round(Math.random() * 3) + 2;
       k = i;
     }
 
-    stringReview = rejoinedReview.join('');
-    return stringReview;
+    this.setState({
+      phrases: reviewObjects,
+    });
+    return reviewObjects;
   }
 
   render() {
     return (
-      <div className={Styles.container} id="myapp">
-        <Header currentRestaurant={this.state.currentRestaurant} className="headerz" />
-        <Graph currentRestaurant={this.state.currentRestaurant} className="graphz" />
-        <Scores currentRestaurant={this.state.currentRestaurant} className="scorez" />
-        <Reviews className="container" />
+      <div className={styles.appcontainer} id="myapp">
+        <Header currentRestaurant={this.state.currentRestaurant} className="headerModule" />
+        <Graph currentRestaurant={this.state.currentRestaurant} className="graphModule" />
+        <Scores currentRestaurant={this.state.currentRestaurant} className="scoreModule" />
+        <div className={styles.reviewscontainer}>
+          {
+            this.state.phrases.map((item, index) => (
+              <Reviewphrase phrase={item} className="reviewPhraseModule" key={index} />
+            ))
+          }
+        </div>
       </div>
     );
   }
