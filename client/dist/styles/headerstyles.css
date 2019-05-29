@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('http://localhost:3001/client/dist/styles/fonts/CalibreWeb-Regular.woff22');
+}
+
+@font-face {
+  font-family: 'Calibre-Semibold';
+  src: url('http://localhost:3001/client/dist/styles/fonts/CalibreWeb-Semibold.woff2');
+}
+
+* {
+  font-family: 'Calibre';
+}
+
+/*
+  ========================================
+  Viewport Size:
+  ========================================
+*/
+
+
+@media (min-width: 0px) {
+  .reviews {
+    font-size: 16px;
+    letter-spacing: .013em;
+    line-height: 24px;
+  }
+  .score {
+    font-size: 28px;
+    letter-spacing: .086em;
+    line-height: 32px;
+  }
+  .name {
+    width: 100vw;
+    font-size: 28px;
+    letter-spacing: .086em;
+    line-height: 32px;
+    color: #101820;
+    font-family: 'Calibre';
+  }
+}
+@media (min-width: 600px) {
+  .reviews {
+    font-size: 18px;
+    letter-spacing: .013em;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 960px) {
+  .reviews {
+    font-size: 22px;
+    letter-spacing: .004em;
+    line-height: 32px;
+  }
+  .score {
+    font-size: 36px;
+    letter-spacing: .086em;
+    line-height: 44px;
+  }
+  .name {
+    width: 100vw;
+    font-size: 36px;
+    letter-spacing: .086em;
+    line-height: 44px;
+    color: #101820;
+    font-family: 'Calibre';
+  }
+}
+
+/*
+  ========================================
+  Universal & High-level Styles:
+  ========================================
+*/
+
+.vw, .vw > * {
+  width: 100vw;
+}
+
+h2 {
+  letter-spacing: .086em;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  max-width: 400px;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.container {
+  width: 500px;
+  margin: 20px;
+  margin-left: 15px;
+  min-width: 300px;
+}
+
+.header {
+  font-family: 'Calibre';
+  color: #656666;
+}
+
+.blueFont, .blueFont * {
+  color: #101820;
+}
+
+/*
+  ========================================
+  The Header submodule:
+  ========================================
+*/
+
+.description {
+  letter-spacing: .03em;
+  font-size: 15px;
+  color: #656666;
+  width: 100vw;
+}
+
+.headerlink {
+  margin: 2px;
+  font-size: 15px;
+  letter-spacing: .04em;
+  border-bottom: 1px #656666 solid;
+  width: 100vw;
+  color: #656666;
+  text-decoration: none;
+}
+
+.dot {
+  margin: 2px;
+  font-size: 15px;
+  letter-spacing: .06em;
+}
+
+.headerLink:visited {
+  color: #656666;
+}

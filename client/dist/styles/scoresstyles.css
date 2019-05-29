@@ -1,0 +1,82 @@
+/*
+  ========================================
+  Viewport Size:
+  ========================================
+*/
+
+
+@media (min-width: 0px) {
+  .food, .decor, .service {
+    font-size: 28px;
+    letter-spacing: .086em;
+    line-height: 32px;
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .food, .decor, .service {
+    font-size: 36px;
+    letter-spacing: .086em;
+    line-height: 44px;
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 10px;
+  }
+}
+
+/*
+  ========================================
+  'Score' submodule:
+  ========================================
+*/
+
+
+.scoresTitle {
+  display: block;
+  letter-spacing: .086em;
+  color: #656666;
+}
+
+.scores {
+  width: 400px;
+}
+
+.category {
+  font-size: 10px;
+  letter-spacing: .125em;
+}
+
+.scoreBorder {
+  margin-top: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: #d0d2d3;
+  padding-bottom: 16px;
+}
+
+.side {
+  border-right: 1px #d0d2d3 solid;
+  text-align: center;
+  letter-spacing: .086em;
+}
+
+.noside {
+  text-align: center;
+  letter-spacing: .086em;
+}
+
+.scoreBoard {
+  display: flex;
+  max-width: 400px;
+  margin-top: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #d0d2d3;
+  padding-bottom: 16px;
+  color: #101820;
+}
