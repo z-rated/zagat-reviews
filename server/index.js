@@ -1,4 +1,5 @@
 const express = require('express');
+const CORS = require('cors');
 const bodyParser = require('body-parser');
 const database = require('../database/db.js');
 
@@ -8,6 +9,7 @@ const port = 3001;
 app.use(bodyParser.json());
 
 app.use(express.static(`${__dirname}/../client/dist`));
+app.use(CORS());
 
 app.get('/api/restaurants/:id/reviews', (req, res) => {
   // the 'id' param is accessible at req.params.id!!!
