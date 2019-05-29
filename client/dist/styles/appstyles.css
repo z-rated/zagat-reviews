@@ -1,0 +1,10 @@
+.appcontainer {
+  width: 500px;
+  margin-top: 1px;
+  margin-left: 25px;
+  min-width: 300px;
+}
+
+.reviewscontainer {
+  margin-top: 14px;
+}
