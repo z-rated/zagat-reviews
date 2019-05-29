@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Calibre-Semibold';
-  src: url('http://localhost:3001/client/dist/styles/fonts/CalibreWeb-Semibold.woff2');
+  src: url('http://localhost:3001/dist/styles/fonts/CalibreWeb-Semibold.woff2');
 }
 
 @media (min-width: 0px) {
