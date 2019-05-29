@@ -7,7 +7,7 @@ import React from 'react';
 import App from './app.jsx';
 
 if (typeof document !== 'undefined') {
-  ReactDOM.render(<App />, document.getElementById('app'));
+  ReactDOM.render(<App />, document.getElementById('reviews'));
 }
 
 export default App;

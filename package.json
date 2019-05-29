@@ -7,7 +7,7 @@
     "start": "nodemon server/index.js",
     "react-dev": "webpack -d --watch",
     "seed": "node database/database.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
   },
@@ -29,8 +29,8 @@
       "<rootDir>/src",
       "<rootDir>/node_modules"
     ],
-  "transformIgnorePatterns": [
-    "/node_modules/(?!lodash-es)"
+    "transformIgnorePatterns": [
+      "/node_modules/(?!lodash-es)"
     ]
   },
   "author": "",
@@ -43,6 +43,7 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^24.8.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "css-loader": "^2.1.1",
     "docker": "^1.0.0",
     "express": "^4.16.4",
