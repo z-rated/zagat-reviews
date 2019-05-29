@@ -8,8 +8,8 @@ const port = 3001;
 
 app.use(bodyParser.json());
 
-app.use(express.static(`${__dirname}/../client/dist`));
 app.use(CORS());
+app.use(express.static(`${__dirname}/../client/dist`));
 
 app.get('/api/restaurants/:id/reviews', (req, res) => {
   // the 'id' param is accessible at req.params.id!!!
