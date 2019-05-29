@@ -1,27 +1,15 @@
 .appcontainer {
   margin-top: 30px;
   margin-left: 25px;
-  min-width: 300px;
+  min-width: 440px;
   padding-left: 40px;
   padding-right: 20px;
   padding-bottom: 20px;
   float: left;
-  width: 50% !important;
+  width: 56% !important;
   background-color: white;
 }
 
 .reviewscontainer {
   margin-top: 14px;
-}
-
-#logo {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  top: -40px;
-  left: 400px;
-  /* left: var(--left-offset); */
-  border: 2px;
-  border: white solid;
-  border-radius: 16px;
 }
