@@ -54,11 +54,12 @@ h2 {
   border-bottom: 1px #656666 solid;
   border-top: 1px #656666 solid;
   height: 2px;
+  max-width: 400px;
   margin-bottom: 23px;
   margin-top: 23px;
   margin-right: 0px;
   margin-left: 0px;
-  width: 490px;
+  width: 100%;
   position: absolute;
 }
 
@@ -79,20 +80,10 @@ h2 {
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 50px;
+  /* left: 50px; */
   top: 10px;
   left: var(--left-offset);
   border: 2px;
   border: white solid;
   border-radius: 16px;
 }
-
-/* .wrapper {
-  position: absolute;
-  right: 50px;
-} */
-
-/* .wrapper {
-  position: absolute;
-  right: 50px;
-} */
