@@ -8,8 +8,9 @@
   src: url('http://localhost:3001/styles/fonts/CalibreWeb-Semibold.woff2');
 }
 
-* {
+body {
   font-family: 'Calibre';
+  background-color: rgb(250,250,250);
 }
 
 /*
