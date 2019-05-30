@@ -39,13 +39,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    const id = window.location.pathname.substring(13);
+    console.log(id);
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3001/api/restaurants/1/reviews',
+      url: `/restaurants/${id}/reviews`,
       success: (result) => {
-        const randomIndex = Math.round(Math.random() * 100);
-        const newRestaurant = result[randomIndex];
-        const quotedReview = this.addBoldedQuotes(newRestaurant.review);
+        const newRestaurant = result[0];
+        const quotedReview = this.addBoldedQuotes(result[0].review);
         newRestaurant.review = quotedReview;
         this.setState({
           currentRestaurant: newRestaurant,

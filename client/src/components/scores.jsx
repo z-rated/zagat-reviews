@@ -53,8 +53,8 @@ class Scores extends React.Component {
   }
 }
 
-Scores.propTypes = {
-  currentRestaurant: PropTypes.object.isRequired,
-};
+// Scores.propTypes = {
+//   currentRestaurant: PropTypes.array.isRequired,
+// };
 
 export default Scores;

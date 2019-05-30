@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 const express = require('express');
 const CORS = require('cors');
 const bodyParser = require('body-parser');
@@ -12,8 +13,8 @@ app.use(CORS());
 app.use(express.static(`${__dirname}/../client/dist`));
 
 app.get('/api/restaurants/:id/reviews', (req, res) => {
-  // the 'id' param is accessible at req.params.id!!!
-
+  const id = req.params.id;
+  console.log(id);
   database.getRecords((error, result) => {
     if (error) {
       console.log('Error in server!');
@@ -23,7 +24,7 @@ app.get('/api/restaurants/:id/reviews', (req, res) => {
       res.status(200);
       res.json(result);
     }
-  });
+  }, id);
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
