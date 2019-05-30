@@ -40,7 +40,6 @@ class App extends React.Component {
 
   componentDidMount() {
     const id = window.location.pathname.substring(13);
-    console.log(id);
     $.ajax({
       method: 'GET',
       url: `/restaurants/${id}/reviews`,

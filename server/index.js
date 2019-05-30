@@ -14,7 +14,6 @@ app.use(express.static(`${__dirname}/../client/dist`));
 
 app.get('/api/restaurants/:id/reviews', (req, res) => {
   const id = req.params.id;
-  console.log(id);
   database.getRecords((error, result) => {
     if (error) {
       console.log('Error in server!');
