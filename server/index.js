@@ -1,4 +1,3 @@
-/* eslint-disable prefer-destructuring */
 const express = require('express');
 const CORS = require('cors');
 const bodyParser = require('body-parser');
