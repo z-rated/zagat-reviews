@@ -26,43 +26,43 @@ const getRecords = function (callback, restaurantNumber) {
   });
 };
 
-//UPDATE: update a value for a specific property 
-const updateRecords = (callback, id, description) => {
-  console.log(id);
-  console.log(description);
-  const queryString = `UPDATE restaurants SET description = "${description}" WHERE rest_id = ${id}`;
-  connection.query(queryString, (error, result) => {
-    if (error) {
-      callback(error, null);
-    } else {
-      callback(null, result);
-    }
-  })
-}
+// //UPDATE: update a value for a specific property 
+// const updateRecords = (callback, id, description) => {
+//   console.log(id);
+//   console.log(description);
+//   const queryString = `UPDATE restaurants SET description = "${description}" WHERE rest_id = ${id}`;
+//   connection.query(queryString, (error, result) => {
+//     if (error) {
+//       callback(error, null);
+//     } else {
+//       callback(null, result);
+//     }
+//   })
+// }
 
-//DELETE: delete a restaurant 
-const deleteRecords = (callback, id) => {
-  const queryString = `DELETE FROM restaurants WHERE rest_id = ${id}`;
-  connection.query(queryString, (error, result) => {
-    if (error) {
-      callback(error, null);
-    } else {
-      callback(null, result);
-    }
-  })
-}
+// //DELETE: delete a restaurant 
+// const deleteRecords = (callback, id) => {
+//   const queryString = `DELETE FROM restaurants WHERE rest_id = ${id}`;
+//   connection.query(queryString, (error, result) => {
+//     if (error) {
+//       callback(error, null);
+//     } else {
+//       callback(null, result);
+//     }
+//   })
+// }
 
-//CREATE 
-const createRecords = (callback, name, type, price, location, description, foodScore, decorScore, serviceScore, review) => {
-  const queryString = `INSERT INTO restaurants (name, type, price, location, description, foodScore, decoreScore, serviceScore, review) values ("${name}", "${type}", "${price}", "${location}", "${description}", "${foodScore}", "${decorScore}", "${serviceScore}", "${review}")`;
-  connection.query(queryString, (error, result) => {
-    if (error) {
-      callback(error, null);
-    } else {
-      callback(null, result);
-    }
-  })
-}
+// //CREATE 
+// const createRecords = (callback, name, type, price, location, description, foodScore, decorScore, serviceScore, review) => {
+//   const queryString = `INSERT INTO restaurants (name, type, price, location, description, foodScore, decoreScore, serviceScore, review) values ("${name}", "${type}", "${price}", "${location}", "${description}", "${foodScore}", "${decorScore}", "${serviceScore}", "${review}")`;
+//   connection.query(queryString, (error, result) => {
+//     if (error) {
+//       callback(error, null);
+//     } else {
+//       callback(null, result);
+//     }
+//   })
+// }
 
 module.exports = {
   getRecords,
