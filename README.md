@@ -64,9 +64,10 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## API
 
-The on-splash /GET requests for the 100 random data records that dataGenerator.js stores in a MySQL database 'restaurants' are routed to: 
+Route to an existing restaurant reviews :
 
 http://localhost:3001/api/restaurants/:id/reviews
+### GET Request
 
 This app's development port number was 3001.
 
@@ -84,6 +85,28 @@ result[0] = {
     serviceScore: "0.2",
     review: "Iure modi eos et expedita. Itaque est cupiditate similique laborum dolorem voluptatum quos. Placeat autem ut exercitationem et. Porro culpa rerum et debitis in voluptates sit sit perferendis. Velit deleniti nostrum ut sunt maxime animi quia sit. Beatae itaque tempora sed quo et ut."
 },
+
+### UPDATE request
+The /UPDATE request changes the review data for an existing restaurant 
+* Send the specific id of restaurant from the endpoint and send new data in request body 
+* Query the database to update the data sent for the restaurant corresponding to the id 
+
+### DELETE request
+The /DELETE request deletes an existing restaurant from the database 
+* Send the specific id of restaurant from the endpoint
+* Query the database to delete the review of restaurant corresponding to the id
+
+### CREATE request 
+The /CREATE request adds new reviews to an restaurant without reviews
+* Send the specific id of restaurant from the endpoint and the new review data in request body 
+* Query the database to create a new id with the sent data 
+
+
+
+
+
+
+
 
 ## Dependencies
 
