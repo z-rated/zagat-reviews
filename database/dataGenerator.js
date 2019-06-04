@@ -30,7 +30,8 @@ const getRandomRecords = function () {
       location, description, foodScore,
       decorScore, serviceScore, review);
     allRestaurants.push(oneRestaurant);
-
+    //[[name, type, price, location...], [name, type, price, location...],...]
+    
     oneRestaurant = [];
 
     records.push(restaurantObject);
