@@ -64,10 +64,10 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## API
 
-### GET Request
-The /GET requests for the 100 random data records that dataGenerator.js stores in a MySQL database 'restaurants' are routed to: 
+Route to an existing restaurant reviews :
 
 http://localhost:3001/api/restaurants/:id/reviews
+### GET Request
 
 This app's development port number was 3001.
 
@@ -87,17 +87,19 @@ result[0] = {
 },
 
 ### UPDATE request
-The /UPDATE request changes the data for an existing restaurant 
+The /UPDATE request changes the review data for an existing restaurant 
 * Send the specific id of restaurant from the endpoint and send new data in request body 
 * Query the database to update the data sent for the restaurant corresponding to the id 
 
 ### DELETE request
 The /DELETE request deletes an existing restaurant from the database 
 * Send the specific id of restaurant from the endpoint
-* Query the database to delete the restaurant corresponding to the id
+* Query the database to delete the review of restaurant corresponding to the id
 
 ### CREATE request 
-The /CREATE request 
+The /CREATE request adds new reviews to an restaurant without reviews
+* Send the specific id of restaurant from the endpoint and the new review data in request body 
+* Query the database to create a new id with the sent data 
 
 
 
