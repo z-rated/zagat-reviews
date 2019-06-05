@@ -30,3 +30,6 @@ coverage
 build/
 dist/
 client/dist/bundle.js
+
+# Ignore CSV file with 10 M rows
+database/data.csv
