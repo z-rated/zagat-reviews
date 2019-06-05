@@ -157,3 +157,7 @@ Martin Connor (mepc36@gmail.com)
 ## Acknowledgements
 
 Sang Park, Nick Vincent-Hill, Destiny Walker, Connor Homan, Roger Dunn, Eugenia Ong, Rafe Autie, Eric Soderholm
+
+,description,foodScore,decorScore,serviceScore,review
+
+${description},${foodScore},${decoreScore},${serviceScore},${review}

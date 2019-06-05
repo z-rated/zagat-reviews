@@ -66,7 +66,7 @@ const getRecords = function (callback, restaurantNumber) {
 
 module.exports = {
   getRecords,
-  updateRecords,
-  deleteRecords,
-  createRecords
+  // updateRecords,
+  // deleteRecords,
+  // createRecords
 };
