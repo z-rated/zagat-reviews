@@ -64,14 +64,13 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## API
 
-Route to an existing restaurant reviews :
+Route to an endpoint for a specific review of restaurant: 
+/api/restaurants/:id/reviews
 
-http://localhost:3001/api/restaurants/:id/reviews
 ### GET Request
+The /GET requests for the 100 random data records that dataGenerator.js stores in a MySQL database 'restaurants'. A GET request will return the review data for an existing restaurant
 
-This app's development port number was 3001.
-
-Request objects get returned in the following form:
+Response:
 
 result[0] = {
     rest_id: 1,
@@ -91,16 +90,21 @@ The /UPDATE request changes the review data for an existing restaurant
 * Send the specific id of restaurant from the endpoint and send new data in request body 
 * Query the database to update the data sent for the restaurant corresponding to the id 
 
+Response: Status Code 201
+
 ### DELETE request
 The /DELETE request deletes an existing restaurant from the database 
 * Send the specific id of restaurant from the endpoint
 * Query the database to delete the review of restaurant corresponding to the id
+
+Response: Status Code 200
 
 ### CREATE request 
 The /CREATE request adds new reviews to an restaurant without reviews
 * Send the specific id of restaurant from the endpoint and the new review data in request body 
 * Query the database to create a new id with the sent data 
 
+Response: Status Code 200
 
 
 
@@ -153,3 +157,7 @@ Martin Connor (mepc36@gmail.com)
 ## Acknowledgements
 
 Sang Park, Nick Vincent-Hill, Destiny Walker, Connor Homan, Roger Dunn, Eugenia Ong, Rafe Autie, Eric Soderholm
+
+,description,foodScore,decorScore,serviceScore,review
+
+${description},${foodScore},${decoreScore},${serviceScore},${review}
