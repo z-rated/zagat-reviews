@@ -8,23 +8,39 @@ const randomScore = function () {
 const prices = ['$', '$$', '$$$', '$$$$'];
 
 const getRandomPrice = (prices) => {
-  return prices[Math.floor((Math.random()*4))]
+  return prices[Math.floor((Math.random()*4))];
 }
 
-const writeStream = fs.createWriteStream('./database/data.csv');
-const header = `id,restaurants,type,price,location,description,foodScore,decorScore,serviceScore,review` + '\n'
+const getPriceSearch = (price) => {
+  if (price === '$') {
+    return 1;
+  }
+  if (price === '$$') {
+    return 2;
+  }
+  if (price === '$$$') {
+    return 3;
+  }
+  if (price === '$$$$') {
+    return 4;
+  }
+}
+
+const writeStream = fs.createWriteStream('./database/data2.csv');
+const header = `id,restaurants,type,price,priceSearch,location,description,foodScore,decorScore,serviceScore,review` + '\n'
 writeStream.write(header);
 for (var i = 1; i < 10000001; i++) {
   const name = faker.lorem.words();
   const type = faker.lorem.word();
   const price = getRandomPrice(prices);
-  const location = faker.lorem.word();
+  const priceSearch = getPriceSearch(price);
+  const location = faker.lorem.words();
   const description = faker.lorem.sentence();
   const foodScore = randomScore();
   const decoreScore = randomScore();
   const serviceScore = randomScore();
   const review = faker.lorem.words();
-  const row = `${i},${name},${type},${price},${location},${description},${foodScore},${decoreScore},${serviceScore},${review}\n`;
+  const row = `${i},${name},${type},${price},${priceSearch},${location},${description},${foodScore},${decoreScore},${serviceScore},${review}\n`;
   writeStream.write(row);
 }
 writeStream.end();
