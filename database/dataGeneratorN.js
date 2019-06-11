@@ -26,20 +26,20 @@ const getPriceSearch = (price) => {
   }
 }
 
-const writeStream = fs.createWriteStream('./database/data2.csv');
+const writeStream = fs.createWriteStream('./database/sample4.csv');
 const header = `id,restaurants,type,price,priceSearch,location,description,foodScore,decorScore,serviceScore,review` + '\n'
 writeStream.write(header);
 for (var i = 1; i < 10000001; i++) {
-  const name = faker.lorem.words();
+  const name = faker.lorem.word() + '' + i;
   const type = faker.lorem.word();
   const price = getRandomPrice(prices);
   const priceSearch = getPriceSearch(price);
-  const location = faker.lorem.words();
-  const description = faker.lorem.sentence();
+  const location = faker.lorem.word();
+  const description = faker.lorem.words();
   const foodScore = randomScore();
   const decoreScore = randomScore();
   const serviceScore = randomScore();
-  const review = faker.lorem.words();
+  const review = faker.lorem.sentence();
   const row = `${i},${name},${type},${price},${priceSearch},${location},${description},${foodScore},${decoreScore},${serviceScore},${review}\n`;
   writeStream.write(row);
 }
