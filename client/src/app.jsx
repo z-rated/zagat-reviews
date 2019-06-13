@@ -25,9 +25,9 @@ class App extends React.Component {
         location: '',
         price: '',
         review: '',
-        foodScore: '',
-        decorScore: '',
-        serviceScore: '',
+        foodscore: '',
+        decorscore: '',
+        servicescore: '',
       },
       phrases: [
         {
@@ -42,7 +42,7 @@ class App extends React.Component {
     // const id = window.location.pathname.substring(13);
     $.ajax({
       method: 'GET',
-      url: `/api/restaurants/50/reviews`,
+      url: `/api/restaurants/89/reviews`,
       success: (result) => {
         console.log('Server success!');
         const newRestaurant = result[0];
