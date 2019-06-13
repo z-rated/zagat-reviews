@@ -1,3 +1,4 @@
+require('newrelic');
 const express = require('express');
 const CORS = require('cors');
 const bodyParser = require('body-parser');
@@ -5,6 +6,7 @@ const bodyParser = require('body-parser');
 const db = require('../database/dbN.js');
 const app = express();
 const port = 3005;
+
 
 app.use(bodyParser.json());
 
@@ -112,6 +114,22 @@ app.post('/restaurant/new', (req, res) => {
     }
   })
 })
+
+app.delete('/api/restaurants/:id/reviews', (req, res) => {
+  const id = req.params.id;
+  db.deleteReview(id, (err, result) => {
+    if (err) {
+      res.status(400);
+      res.send(err);
+    }
+    else {
+      res.status(200);
+      res.send(result);
+    }
+  })
+})
+
+
 
 
 

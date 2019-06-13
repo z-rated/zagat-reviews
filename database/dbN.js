@@ -62,10 +62,23 @@ const postReview = (name, type, price, pricesearch, location, description, foods
   })
 }
 
+const deleteReview = (id, callback) => {
+  pool.query(`DELETE FROM reviews WHERE id = $1`, [id], (err, result) => {
+    if (err) {
+      callback(err);
+    }
+    else {
+      const success = 'succesfully deleted'
+      callback(null, success);
+    }
+  })
+}
+
 module.exports = {
   getReviewById,
   getByPriceandLocation,
   getByName,
   getByLocation,
-  postReview
+  postReview,
+  deleteReview
 }
