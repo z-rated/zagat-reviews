@@ -18,7 +18,6 @@ const getReviewById = (id, callback) => {
 }
 
 const getByPriceandLocation = (pricesearch, location, callback) => {
-  console.log(pricesearch);
   pool.query('SELECT * FROM reviews WHERE pricesearch<$1 AND location=$2 limit 300', [pricesearch, location],  (err, result) => {
     if (err) {
       callback(err);

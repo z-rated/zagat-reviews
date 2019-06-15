@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 // const database = require('../database/db.js');
 const db = require('../database/dbN.js');
 const app = express();
-const port = 3005;
+const port = 3001;
 
 
 app.use(bodyParser.json());
@@ -33,65 +33,72 @@ app.use(express.static(`${__dirname}/../client/dist`));
 //   }, id);
 // });
 
+//50%
 app.get('/api/restaurants/:id/reviews', (req, res) => {
   const id = req.params.id;
-  console.log(id);
   db.getReviewById(id, (err, data) => {
     if (err) {
       res.status(400);
       res.send(err);
     }
     else {
+      console.log('ID api ran')
       res.status(200);
       res.send(data.rows);
     }
   })
 })
 
-app.get(`/restaurants/price`, (req, res) => {
-  const pricesearch = req.query.pricesearch;
-  const location = req.query.location;
+//15%
+app.get(`/api/restaurants/:pricesearch&:location`, (req, res) => {
+  const pricesearch = req.params.pricesearch;
+  const location = req.params.location;
   db.getByPriceandLocation(pricesearch, location, (err, data) => {
     if (err) {
       res.status(400);
       res.send(err);
     }
     else {
-      console.log(data)
+      console.log('PRICE api ran')
       res.status(200);
       res.send(data.rows);
     }
   })
 })
 
-app.get('/restaurants/name', (req, res) => {
-  const name = req.query.name; 
+//15%
+app.get('/api/restaurants/:name', (req, res) => {
+  const name = req.params.name; 
   db.getByName(name, (err, data) => {
     if (err) {
       res.status(400);
       res.send(err);
     }
     else {
+      console.log('NAME api ran')
       res.status(200);
       res.send(data.rows);
     }
   })
 })
 
-app.get('/restaurants/location', (req, res) => {
-  const location = req.query.location;
+//15%
+app.get('/api/restaurants/:location/location', (req, res) => {
+  const location = req.params.location;
   db.getByLocation(location, (err, data) => {
     if (err) {
       res.status(400);
       res.send(err);
     }
     else {
+      console.log('LOCATION api ran')
       res.status(200);
       res.send(data.rows);
     }
   })
 })
 
+//5%
 app.post('/restaurant/new', (req, res) => {
   const name = req.body.name;
   const type = req.body.type;
@@ -128,6 +135,9 @@ app.delete('/api/restaurants/:id/reviews', (req, res) => {
     }
   })
 })
+
+
+
 
 
 
