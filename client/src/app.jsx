@@ -39,10 +39,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // const id = window.location.pathname.substring(13);
+    const id = Number(window.location.pathname.split('/')[1])
     $.ajax({
       method: 'GET',
-      url: `/api/restaurants/89/reviews`,
+      url: `/api/restaurants/${id}/reviews`,
       success: (result) => {
         console.log('Server success!');
         const newRestaurant = result[0];
