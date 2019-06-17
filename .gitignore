@@ -34,3 +34,8 @@ client/dist/bundle.js
 # Ignore CSV file with 10 M rows
 database/data.csv
 database/data2.csv
+database/data4.csv
+
+# Ignore Important 
+newrelic.js
+newrelic_agent.log

@@ -1,0 +1,101 @@
+id,restaurants,type,price,priceSearch,location,description,foodScore,decorScore,serviceScore,review
+1,in1,commodi,$,1,eum,fugit consequatur consequuntur,4.2,0.4,0.5,Fugiat sunt ipsum.
+2,voluptatibus2,voluptatem,$$$,3,quasi,maxime temporibus et,1.2,3.9,3.1,Sed quidem facere commodi repellendus blanditiis inventore et consequatur.
+3,occaecati3,dolor,$$,2,explicabo,ut libero molestiae,0.4,3.0,2.1,Vitae architecto a voluptas est perspiciatis accusamus.
+4,et4,amet,$$,2,laboriosam,odio inventore laudantium,0.1,1.5,1.4,Quas sit et similique.
+5,necessitatibus5,debitis,$,1,et,magni dicta rerum,1.7,0.0,4.9,Aspernatur amet sunt sint aut et sed labore.
+6,et6,aliquid,$$$,3,quis,culpa neque quisquam,4.6,0.8,1.7,Alias aut ipsam numquam libero nulla sit voluptatem ipsum et.
+7,perspiciatis7,dolorum,$$,2,vel,omnis impedit nemo,1.2,2.5,2.9,Inventore nihil expedita omnis non enim optio autem cupiditate.
+8,odit8,perspiciatis,$,1,architecto,est ipsum voluptatem,0.9,2.5,3.5,Dignissimos qui praesentium quod accusantium deleniti ipsam nihil ut.
+9,ea9,beatae,$$$$,4,maxime,pariatur atque quibusdam,3.0,0.4,1.0,Modi voluptatem ut doloremque aut.
+10,est10,autem,$$$,3,sed,dolor placeat voluptatibus,3.1,4.7,3.2,Non id velit rerum velit.
+11,culpa11,commodi,$,1,laboriosam,nobis rerum aut,3.6,1.8,2.2,Itaque soluta quas.
+12,dolorem12,recusandae,$,1,ratione,quia necessitatibus ut,4.9,1.5,0.6,Aut aut molestias quae impedit sed et nihil molestias.
+13,tempore13,fuga,$$,2,aliquam,aut quas autem,0.8,2.2,1.2,Nobis nostrum perferendis sed ab dolorum earum odio et sequi.
+14,similique14,nihil,$$$$,4,autem,dolore sequi quisquam,0.4,3.7,3.0,Quae quaerat repellendus exercitationem a ea velit voluptate debitis minus.
+15,et15,est,$,1,tempora,eligendi officia aspernatur,0.8,3.1,0.4,Enim inventore eius quia quisquam est ea saepe alias deserunt.
+16,et16,quia,$$$,3,non,et et qui,1.2,3.5,2.4,Fuga aut ut.
+17,pariatur17,ab,$,1,ipsum,deleniti dolorum minima,4.0,1.3,3.6,Enim aut illo.
+18,quo18,at,$$$,3,vero,quidem occaecati est,2.9,0.8,3.6,Corrupti in excepturi voluptatum autem temporibus voluptatem.
+19,unde19,atque,$$$$,4,dicta,molestiae veniam voluptas,4.7,4.6,2.5,Consequatur blanditiis possimus velit.
+20,hic20,commodi,$$,2,est,ut consequuntur et,3.0,4.3,4.0,Blanditiis id voluptas corrupti.
+21,doloremque21,non,$,1,rerum,at quo laboriosam,2.3,0.8,3.4,Omnis adipisci similique aut omnis libero iusto in accusamus similique.
+22,at22,amet,$$$,3,maiores,voluptatem laboriosam provident,4.2,0.6,0.4,Fugiat quis velit id.
+23,placeat23,nostrum,$$$$,4,aperiam,quisquam in sunt,0.7,1.4,1.5,Ad hic reiciendis dolore est vel.
+24,laboriosam24,aliquid,$,1,mollitia,iusto neque impedit,3.6,3.8,2.6,Rem praesentium saepe.
+25,voluptas25,quam,$$,2,dolor,asperiores a in,3.4,2.0,3.6,Repellat officiis et.
+26,perferendis26,unde,$,1,fugiat,unde unde quibusdam,3.0,3.9,4.6,Ut voluptas odit beatae blanditiis debitis vel.
+27,qui27,doloremque,$$$,3,earum,aut dolore ullam,3.9,0.7,3.4,Officiis praesentium quos qui laborum.
+28,sed28,autem,$,1,laborum,et tempora autem,2.0,1.1,2.2,Consequuntur unde maiores tempora voluptatem laborum.
+29,doloremque29,earum,$$,2,et,rerum et sit,1.8,4.9,4.1,Voluptates praesentium voluptas eveniet ea natus.
+30,voluptates30,aut,$$$$,4,sequi,corrupti perferendis sit,3.7,4.8,4.9,Et quam sint dolorem perferendis sapiente voluptatem.
+31,laboriosam31,voluptas,$,1,quidem,dolore natus veniam,1.9,1.1,3.5,Magnam enim est.
+32,molestiae32,est,$$$,3,ab,ratione sit recusandae,3.3,0.3,4.0,Recusandae nihil quis laudantium.
+33,enim33,molestiae,$$$$,4,sunt,distinctio sit doloribus,3.4,0.9,0.9,Ut modi et fugit iste quia error temporibus ut et.
+34,rerum34,eaque,$,1,vel,omnis unde consequatur,4.7,2.3,3.6,Ex adipisci laboriosam optio neque autem magnam sed distinctio non.
+35,quidem35,iure,$$$,3,est,suscipit et deleniti,3.3,2.2,0.7,Eaque est sunt.
+36,officia36,unde,$$$$,4,laudantium,voluptatibus est consectetur,2.9,3.1,5.0,Aperiam qui modi vel nisi eius voluptatem eveniet impedit.
+37,aliquid37,voluptatem,$$$,3,consequatur,quidem aut magni,0.8,1.7,2.9,Magni quis vel nostrum alias accusamus quos neque.
+38,corporis38,laudantium,$$$,3,et,autem error doloremque,1.1,1.6,2.8,Nemo molestias vero et nesciunt similique sed qui.
+39,sunt39,dolorem,$$$$,4,sunt,iure velit nisi,0.0,3.9,4.6,Distinctio enim maxime hic quo cumque numquam et.
+40,autem40,quam,$$,2,nisi,doloremque tempore reiciendis,1.7,3.3,0.3,Aperiam optio ut culpa mollitia dolores quia laboriosam.
+41,error41,omnis,$,1,vel,et consequatur natus,3.0,2.8,4.2,Facere et voluptatem quos voluptas.
+42,dignissimos42,cumque,$$,2,consequatur,consequatur est doloribus,1.4,3.7,0.2,Animi esse architecto.
+43,reiciendis43,rem,$$$$,4,temporibus,voluptas tempora qui,3.5,1.9,4.3,Aut voluptas et ea voluptatem veniam natus blanditiis fugit.
+44,omnis44,deserunt,$$$,3,doloribus,voluptatem inventore qui,5.0,3.2,2.6,Atque repudiandae ipsum autem voluptas quo quas ut quibusdam dolor.
+45,quidem45,facilis,$,1,aut,animi corporis temporibus,0.6,0.1,1.7,Quis et eum et ratione explicabo ut.
+46,aut46,iste,$$$$,4,odit,distinctio alias vel,1.3,4.6,3.4,Consequatur ut hic culpa autem odio atque.
+47,minus47,iure,$,1,optio,qui id eos,1.1,5.0,4.5,Omnis sit inventore minus hic quibusdam error ea voluptatum quas.
+48,similique48,recusandae,$,1,ullam,ex ipsa in,3.8,3.9,4.1,Aut aut fugiat eligendi.
+49,sint49,minus,$$,2,magni,alias possimus voluptates,2.6,4.3,3.6,Impedit pariatur magni numquam voluptatem quos quibusdam.
+50,magni50,harum,$$,2,nesciunt,cupiditate ut optio,0.5,1.6,3.6,Quas voluptatibus totam provident cupiditate aspernatur explicabo.
+51,rem51,incidunt,$,1,consequatur,dolorem dolorem aut,2.6,1.8,4.7,Omnis blanditiis libero.
+52,sed52,labore,$$$$,4,id,qui dolor et,0.1,1.7,1.8,Rem quidem cum ex.
+53,quidem53,non,$,1,adipisci,corrupti enim rerum,2.4,3.7,3.2,Laudantium dolores ipsum ut ea at et dicta ut.
+54,quam54,unde,$$,2,voluptatem,quaerat alias enim,4.9,4.6,1.3,Aut enim doloremque veniam tempore sint autem esse soluta.
+55,amet55,quo,$$$$,4,mollitia,saepe aliquam nam,1.2,0.3,4.3,Similique modi ab laboriosam et quod exercitationem.
+56,delectus56,quia,$$$$,4,inventore,et magnam eaque,3.4,2.0,1.8,Quia cumque qui.
+57,praesentium57,culpa,$,1,veritatis,nihil assumenda nihil,4.4,3.3,1.6,Incidunt mollitia nemo rerum distinctio qui hic enim illo sit.
+58,et58,dolorem,$,1,rem,recusandae atque voluptatem,3.3,3.9,3.4,Voluptatem eius aut nobis molestias.
+59,iusto59,aperiam,$$$$,4,sapiente,laudantium consectetur quis,2.5,0.0,3.5,Odit quos quidem.
+60,doloribus60,et,$$,2,beatae,unde iusto sunt,4.3,1.9,4.3,Voluptas voluptas perferendis maiores expedita et.
+61,aperiam61,esse,$$$$,4,maiores,et ratione tenetur,1.8,4.5,3.7,Est et nemo cumque tempore odio ipsum itaque.
+62,consequatur62,incidunt,$$$,3,qui,laudantium eaque exercitationem,3.6,3.0,3.8,Rerum ea id architecto occaecati et reprehenderit.
+63,ut63,tempore,$$,2,nulla,atque qui iusto,3.5,1.2,2.8,Ullam eos nobis.
+64,saepe64,totam,$$,2,est,corrupti rerum quas,4.1,4.0,2.8,Sunt cupiditate in earum illum quaerat rerum facere ut aliquid.
+65,cum65,dolorum,$$$$,4,earum,magni commodi quo,2.3,1.2,4.3,Accusamus odit architecto nesciunt dolores animi voluptatum.
+66,aperiam66,omnis,$$$,3,assumenda,similique ea suscipit,3.9,1.5,3.0,Quod aut vero perferendis possimus quaerat quo sunt iste ut.
+67,consequuntur67,molestiae,$$,2,id,est beatae qui,3.5,2.7,1.6,Quibusdam quia nemo et culpa commodi aliquam quisquam saepe.
+68,quo68,adipisci,$,1,eaque,velit sit quia,3.3,3.9,3.0,Error omnis omnis.
+69,molestias69,sit,$$$$,4,nihil,rerum nobis eos,2.9,2.5,0.0,Consequatur eligendi et.
+70,quam70,molestiae,$$$,3,repudiandae,numquam et eius,4.1,4.9,0.5,Ex quia et temporibus repellendus qui commodi.
+71,odio71,soluta,$$$$,4,numquam,maiores eaque sunt,3.8,3.9,1.0,Ex numquam quia culpa et vel quod et ipsa.
+72,adipisci72,qui,$,1,quis,magni a et,0.3,0.4,3.4,Sed deserunt et delectus ullam ut.
+73,animi73,sit,$$,2,optio,veritatis nesciunt similique,2.4,2.3,1.2,Commodi quo iusto nihil.
+74,ipsum74,nobis,$$,2,deserunt,accusamus nam autem,2.1,2.3,3.1,Aliquid quo deserunt sunt enim maxime eum qui.
+75,modi75,placeat,$$,2,autem,assumenda quaerat quisquam,0.9,3.2,3.8,Eligendi aut nesciunt officia voluptas incidunt nostrum amet quia.
+76,voluptatem76,illum,$,1,consequatur,tempora dolores consequatur,1.5,0.1,4.9,Magni delectus rerum aspernatur cupiditate sunt quam provident.
+77,dolores77,mollitia,$$,2,ut,adipisci nostrum autem,0.2,4.3,3.6,Sed et culpa cupiditate sint nulla quibusdam voluptas vel quam.
+78,et78,aut,$$$$,4,doloremque,possimus sapiente mollitia,4.0,2.3,1.9,Nemo deserunt quam dolorem dolorum eos ratione ab vero explicabo.
+79,aliquid79,laudantium,$$$$,4,ad,blanditiis sed labore,1.2,2.4,3.1,Molestiae dicta cupiditate accusamus unde et voluptate.
+80,laborum80,ut,$$$$,4,cumque,accusantium officiis assumenda,3.9,0.2,3.2,Hic placeat temporibus iure nemo aliquam doloremque.
+81,minus81,dicta,$$$,3,animi,occaecati at aut,4.6,4.5,3.1,Fugit corrupti ipsam ipsam dolores qui neque.
+82,dolore82,nihil,$$$,3,minima,eos quis cum,1.3,4.6,2.5,Cumque ab et maxime odio sint corrupti in.
+83,rerum83,unde,$,1,et,deserunt impedit itaque,3.4,4.5,0.9,Cum et natus quo assumenda voluptatem velit.
+84,sit84,eos,$,1,qui,est vero voluptates,0.5,0.9,3.2,Magni pariatur eius ut et dolor quia veritatis labore perspiciatis.
+85,aperiam85,beatae,$$,2,voluptatem,et perferendis expedita,2.3,3.5,2.3,Accusantium ab aut nisi possimus aut nihil quae aperiam asperiores.
+86,repellendus86,sit,$,1,harum,praesentium expedita est,1.8,0.2,3.2,Qui dolore et sit.
+87,omnis87,voluptas,$$$$,4,dolor,nisi commodi maxime,1.0,1.3,3.7,Laudantium soluta dolorum qui ut error id amet.
+88,eveniet88,rerum,$$$,3,possimus,illum et voluptas,4.2,2.2,1.8,Sunt rerum aliquid quis architecto ut rerum velit.
+89,suscipit89,id,$$$$,4,perferendis,voluptatem enim voluptatem,4.1,0.4,2.8,Ex a recusandae vero id et nulla sit.
+90,est90,qui,$,1,numquam,dignissimos quia eum,0.5,3.6,4.9,Aut consequatur ad et.
+91,enim91,molestias,$$$,3,voluptatum,molestiae ut reprehenderit,3.1,4.9,1.7,Nostrum odio in placeat qui qui.
+92,est92,aut,$$$$,4,temporibus,vitae et quo,3.8,4.9,3.1,Sequi at non voluptate repellat voluptates eum.
+93,fugiat93,dolorum,$$$,3,earum,ullam voluptas voluptatem,1.7,2.9,0.8,Enim harum dicta eveniet.
+94,dolores94,voluptatem,$,1,eveniet,expedita voluptates doloribus,2.1,4.2,3.5,Molestiae blanditiis perspiciatis eveniet eos at ea perspiciatis.
+95,quidem95,nesciunt,$$$$,4,ex,repudiandae itaque enim,3.9,1.2,2.0,Et quia alias harum totam est.
+96,qui96,cumque,$$,2,quibusdam,quia iste vero,1.8,3.0,4.1,Temporibus aut cumque hic illo omnis.
+97,enim97,culpa,$$,2,sunt,modi fuga alias,1.3,0.3,4.3,Assumenda cum porro nesciunt consectetur vel repellendus.
+98,fugiat98,quaerat,$$$,3,totam,inventore aut dolore,3.0,2.3,3.9,Amet dolore voluptatem culpa molestias.
+99,et99,tenetur,$,1,dolor,assumenda assumenda nisi,4.2,1.0,3.4,Voluptate qui non est officia consequatur nam voluptas id.
+100,quod100,quibusdam,$$$,3,voluptatem,qui accusamus consectetur,4.1,1.0,1.6,Qui harum molestiae aut nemo.
